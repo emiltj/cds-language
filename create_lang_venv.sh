@@ -2,8 +2,8 @@
 
 VENVNAME=lang101
 
-python3 -m venv $VENVNAME
-source $VENVNAME/bin/activate
+python -m venv $VENVNAME
+source $VENVNAME/Scripts/activate
 pip install --upgrade pip
 
 pip install ipython
