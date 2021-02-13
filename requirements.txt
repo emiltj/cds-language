@@ -1,2 +1,8 @@
-pandas==1.1.5
-numpy==1.19.4
+pandas
+numpy
+re
+os
+collections
+pandas
+pathlib
+argparse
