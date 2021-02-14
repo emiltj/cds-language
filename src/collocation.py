@@ -10,22 +10,6 @@ import numpy as np
 from collections import *
 import pandas as pd
 from pathlib import Path
-from os import *
-import re
-import io
-import os
-import numpy as np
-from collections import Counter
-from collections import defaultdict
-import pandas as pd
-from pathlib import Path
-import argparse
-
-parser = argparse.ArgumentParser(description='Retrieves collocates for a given keyword in a given directory within a given window, and outputs a csv. with information')
-parser.add_argument('text_dir', type=str, help='directory of texts')
-parser.add_argument('keyword', type=str, help='keyword')
-parser.add_argument('window_size', type=int, help='size of window (number indicates the number of tokens before and after the keyword')
-args = parser.parse_args()
 
 # Define function which includes the arguments text directory, keyword and window size (the latter n-words before and n-words after keyword)
 def collocation(text_dir, keyword, window_size = 1):
@@ -153,8 +137,8 @@ def collocation(text_dir, keyword, window_size = 1):
     
     # Create path for output file
     outpath = os.path.join(".", f"{keyword}_collocations_info.csv")
-    df.to_csv(outpath)
     
+    df.to_csv(outpath)
     print(f"A new file has been created: {outpath}")
 
     #print(f"N-times collocates occurs in the text (regardless of keyword): {n_collocate_dict}")
@@ -173,4 +157,4 @@ def collocation(text_dir, keyword, window_size = 1):
     #print(f"MI): {MI}") # MI's for all collocates
 # If called from the command line(terminal) (if namespace is = main, then:)
 if __name__=="__main__":
-    collocation(args.text_dir, args.keyword, args.window_size)
+    collocation("../data/100_english_novels/corpus/", "key", 1)
