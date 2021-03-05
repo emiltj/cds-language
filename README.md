@@ -4,17 +4,17 @@ This repository contains all of the assignments and code-along sessions of the L
 
 ## Running my scripts
 
-For running my scripts I'd recommend doing the following from your terminal (and remembering to use the new environment that it creates):
+For running my scripts I'd recommend doing the following from your terminal (and remembering to use/activate the new environment that it creates):
 
 __MAC/LINUX/WORKER02__
 ```bash
-git clone https://github.com/CDS-AU-DK/cds-language.git
+git clone https://github.com/emiltj/cds-language.git
 cd cds-language
 bash ./create_lang_venv.sh
 ```
 __WINDOWS:__
 ```bash
-git clone https://github.com/CDS-AU-DK/cds-language.git
+git clone https://github.com/emiltj/cds-language.git
 cd cds-language
 bash ./create_lang_venv_win.sh
 ```
