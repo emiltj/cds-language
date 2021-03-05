@@ -147,7 +147,6 @@ def plot_sentiment(df, start_date, col_no_smooth, col_smooth_7_days, col_smooth_
 
 
 
-
 if __name__=="__main__":
     convert_to_datetime(df, "publish_date")
     calc_sentiment(df, "headline_text")
