@@ -31,9 +31,9 @@ This repository has the following directory structure:
 ```utils``` | Utility functions written by [Ross](https://pure.au.dk/portal/en/persons/ross-deans-kristensenmclachlan(29ad140e-0785-4e07-bdc1-8af12f15856c).html) which are utilised in some of the scripts
 
 Furthermore it contains the files:
-```./create_lang_venv.sh``` -> A bash script which automatically generates a new virtual environment, and install all the packages contained within ```requirements.txt```
-```requirements.txt``` -> A list of packages along with the versions that are certain to work
-```README.md``` -> This very readme file
+- ```./create_lang_venv.sh``` -> A bash script which automatically generates a new virtual environment, and install all the packages contained within ```requirements.txt```
+- ```requirements.txt``` -> A list of packages along with the versions that are certain to work
+- ```README.md``` -> This very readme file
 
 ## Contact
 
